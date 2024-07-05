@@ -10,6 +10,7 @@ const port = 8080;
 
 /* "/"로 처음 접근시 해당 내용 실행한다 */
 app.get('/', (req, res) => {
+    
     res.sendFile("/views/index.html", {root : __dirname});
 });
 
