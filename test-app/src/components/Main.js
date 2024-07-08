@@ -2,6 +2,8 @@ import OneApp from "./OneApp";
 import TwoApp from "./TwoApp";
 import ThreeApp from "./ThreeApp";
 import FourApp from "./FourApp";
+import FiveApp from "./FiveApp";
+import SixApp from "./SixApp";
 
 const Main = () => {
     return (
@@ -13,6 +15,10 @@ const Main = () => {
             <ThreeApp />
             <hr />
             <FourApp />
+            <hr />
+            <FiveApp />
+            <hr />
+            <SixApp />
         </div>
     )
 }
