@@ -15,7 +15,7 @@ const OneApp = () => {
     return (
         <div>
             <h3 className="alert alert-danger">OneApp - icons-material</h3>
-            <h1>Hello</h1>
+            <h1><AccessAlarm />Hello<BookmarkAdd /></h1>
             <Title>Hello</Title>
         </div>
     )

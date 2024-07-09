@@ -7,7 +7,7 @@ import SixApp from "./SixApp";
 import { useState } from "react";
 
 const Main = () => {
-    const [number, setNumber] = useState('1');
+    const [number, setNumber] = useState('3');
 
     return (
         <div>
@@ -15,7 +15,7 @@ const Main = () => {
             <br />
             <select 
                 className="form-select" 
-                defaultValue={1}
+                defaultValue={2}
                 onChange={(e) => setNumber(e.target.value)}
             >
                 <option value={1}>OneApp</option>
@@ -31,7 +31,7 @@ const Main = () => {
                     <OneApp /> : number === '2' ? 
                     <TwoApp /> : number === '3' ? 
                     <ThreeApp /> : number === '4' ? 
-                    <FourApp /> : number === 5 ? 
+                    <FourApp /> : number === '5' ? 
                     <FiveApp /> : <SixApp />
             }
         </div>
