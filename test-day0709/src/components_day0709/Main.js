@@ -4,6 +4,8 @@ import ThreeApp from "./ThreeApp";
 import FourApp from "./FourApp";
 import FiveApp from "./FiveApp";
 import SixApp from "./SixApp";
+import SevenApp from "./SevenApp";
+import EightApp from "./EightApp";
 import { useState } from "react";
 
 const Main = () => {
@@ -24,6 +26,8 @@ const Main = () => {
                 <option value={4}>FourApp</option>
                 <option value={5}>FiveApp</option>
                 <option value={6}>SixApp</option>
+                <option value={7}>SevenApp</option>
+                <option value={8}>EightApp</option>
             </select>  
             <hr />
             {
@@ -32,7 +36,9 @@ const Main = () => {
                     <TwoApp /> : number === '3' ? 
                     <ThreeApp /> : number === '4' ? 
                     <FourApp /> : number === '5' ? 
-                    <FiveApp /> : <SixApp />
+                    <FiveApp /> : number === '6' ?
+                    <SixApp /> : number === '7' ?
+                    <SevenApp /> : <EightApp />
             }
         </div>
     )
