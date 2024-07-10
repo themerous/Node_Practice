@@ -9,7 +9,7 @@ import EightApp from "./EightApp";
 import { useState } from "react";
 
 const Main = () => {
-    const [number, setNumber] = useState('1');
+    const [number, setNumber] = useState('4');
 
     const changeApp = (e) => {
         setNumber(e.target.defaultValue);
@@ -20,7 +20,7 @@ const Main = () => {
             <h3>2024-07-10 React 수업</h3>
             <br />
             <label>
-                <input type="radio" name="app" defaultValue={1} defaultChecked onClick={changeApp} /> OneApp - 배열 추가/삭제
+                <input type="radio" name="app" defaultValue={1} onClick={changeApp} /> OneApp - 배열 추가/삭제
             </label>
             <br />
             <label>
@@ -32,7 +32,7 @@ const Main = () => {
             </label>
             <br />
             <label>
-                <input type="radio" name="app" defaultValue={4} onClick={changeApp} /> FourApp
+                <input type="radio" name="app" defaultValue={4} defaultChecked onClick={changeApp} /> FourApp
             </label>
             <br />
             <label>
