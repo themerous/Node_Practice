@@ -7,6 +7,27 @@ const FourApp = () => {
     const korRef = React.useRef(0);
     const engRef = React.useRef(0);
 
+    const resultButtonEvent = () => {
+        let name = nameRef.current.value;
+        let kor = korRef.current.value;
+        let eng = engRef.current.value;
+
+        let tot = Number(kor) + Number(eng);
+        let avg = tot / 2;
+
+        let s = 
+            `이름: ${name}
+            국어점수: ${kor}점
+            영어점수: ${eng}점
+            총점 : ${tot}점
+            평균 : ${avg}점`;
+
+        setResult(s);
+        nameRef.current.value = '';
+        korRef.current.value = '';
+        engRef.current.value = '';
+    }
+
     return (
         <div>
             <Alert>FourApp - useRef 응용예제</Alert>
@@ -32,7 +53,7 @@ const FourApp = () => {
                     </tr>
                     <tr>
                         <td colSpan={2} align='center'>
-                            <Button variant='contained' color='error'>
+                            <Button variant='contained' color='error' onClick={resultButtonEvent}>
                                 결과 출력하기
                             </Button>
                         </td>
