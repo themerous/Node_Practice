@@ -14,12 +14,19 @@ const TwoApp = () => {
         setDataArray(dataArray.filter((d,i) => i !== idx));
     }
 
+    const addData = (data) => {
+        setDataArray(dataArray.concat({
+            ...data,
+            today: new Date()
+        }));
+    }
+
     return (
         <div>
             <Alert>TwoApp - 객체 배열 출력 : tr의 rowSpan</Alert>
-            <TwoWriteForm />
+            <TwoWriteForm addData={addData} />
             <hr />
-            <table className='table table-striped' style={{width: '400px'}}>
+            <table className='table table-striped' style={{width: '420px'}}>
                 <thead>
                     <tr className='table-danger'>
                         <th style={{width: '50px'}}>번호</th>
