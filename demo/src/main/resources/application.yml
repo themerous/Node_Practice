@@ -5,9 +5,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://db-n9jfa-kr.vpc-pub-cdb.ntruss.com:3306/studydb?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://db-n9jfu-kr.vpc-pub-cdb.ntruss.com:3306/studyDB?serverTimezone=Asia/Seoul
     username: study
-    password: bitcamp!@#123
+    password: mike@1430
     
 #jpa setting
 #ddl-auto: create(기존 테이블을 제거후 다시 생성:절대 주의해서 사용)  , update(변경된 부분만 반영)
