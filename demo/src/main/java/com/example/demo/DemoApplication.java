@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan({ "bit.mycar.*", "naver.storage" })
-@EntityScan("bit.mycar.data")
-@EnableJpaRepositories(basePackages = "bit.mycar.repository")
+@ComponentScan({ "bit.mycar.*", "naver.storage", "bit.board.*" })
+@EntityScan("bit.*.data")
+@EnableJpaRepositories(basePackages = "bit.*.repository")
 public class DemoApplication {
 
 	public static void main(String[] args) {

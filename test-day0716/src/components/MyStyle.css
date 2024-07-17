@@ -1,0 +1,22 @@
+ul.menu {
+    list-style: none;
+}
+
+ul.menu li {
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    background-color: moccasin;
+    margin: 0 0 15px 10px;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid palevioletred;
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
